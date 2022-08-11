@@ -1,0 +1,143 @@
+@import '../../../assets/styles/variables.scss';
+
+.meet-up-block {
+  height: 800px;
+  background-color: $first-color;
+  font-size: 36px;
+  display: grid;
+  place-content: center;
+  &__main-content {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    grid-gap: 2rem;
+    padding: 1rem;
+    &__poping-text {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      &__text-shadows {
+        text-shadow: 3px 3px 0 $first-color, 6px 6px 0 $second-color, 9px 9px $third-color, 12px 12px 0 $fourth-color;
+        font-family: bungee, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: calc(2rem + 5vw);
+        text-align: center;
+        margin: 0;
+        color: #af66b3;
+        animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+        letter-spacing: 0.4rem;
+      }
+    }
+
+    &__greeting {
+      margin: 1rem 0;
+    }
+
+    &__scroll-down-arrow {
+      color: white;
+      text-transform: uppercase;
+      font-size: 16px;
+      &__arrow {
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+        background-image: url('../../../assets/backgrounds/down-arrow-svgrepo-com.svg');
+        background-size: contain;
+        animation: upanddown 3s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: $medium-screen-width) {
+  .meet-up-block {
+    &__main-content {
+      &__greeting {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: $small-screen-width) {
+  .meet-up-block {
+    &__main-content {
+      &__greeting {
+        font-size: 45px;
+      }
+    }
+  }
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 $fourth-color;
+  }
+  20% {
+    text-shadow: 3px 3px 0 $fourth-color, 6px 6px 0 $third-color;
+  }
+  30% {
+    text-shadow: 3px 3px 0 $fourth-color, 6px 6px 0 $third-color, 9px 9px $second-color;
+  }
+  40% {
+    text-shadow: 3px 3px 0 $fourth-color, 6px 6px 0 $third-color, 9px 9px $second-color, 12px 12px 0 $first-color;
+  }
+  50% {
+    text-shadow: 3px 3px 0 $fourth-color, 6px 6px 0 $third-color, 9px 9px $second-color, 12px 12px 0 $first-color;
+  }
+  60% {
+    text-shadow: 3px 3px 0 $fourth-color, 6px 6px 0 $third-color, 9px 9px $second-color, 12px 12px 0 $first-color;
+  }
+  70% {
+    text-shadow: 3px 3px 0 $fourth-color, 6px 6px 0 $third-color, 9px 9px $second-color;
+  }
+  80% {
+    text-shadow: 3px 3px 0 $fourth-color, 6px 6px 0 $third-color;
+  }
+  90% {
+    text-shadow: 3px 3px 0 $fourth-color;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes upanddown {
+  0% {
+    transform: translate(0px);
+  }
+  40% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  60% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}

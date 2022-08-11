@@ -1,3 +1,5 @@
+@import '../../../assets/styles/variables.scss';
+
 .fancy-button {
   margin: 1rem 0;
   --offset: 10px;
@@ -7,7 +9,7 @@
   appearance: none;
   border: 0;
   background: transparent;
-  color: #c996cc;
+  color: $fourth-color;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   outline: none;

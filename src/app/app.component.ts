@@ -9,6 +9,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, AfterViewInit {
+  readonly LINKED_IN_LINK = 'https://www.linkedin.com/in/yura-husak/'
 
   ngOnInit (): void {
     this.registerGsapPlugins()

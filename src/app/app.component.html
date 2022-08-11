@@ -1,15 +1,4 @@
-<div class="meet-up-block">
-  <div class="meet-up-block__main-content">
-    <div class="meet-up-block__main-content__poping-text">
-      <h2 class="meet-up-block__main-content__poping-text__text-shadows">hey</h2>
-    </div>
-    <h1 class="meet-up-block__main-content__greeting">Hello dear guest! Nice to meet you!</h1>
-    <div class="meet-up-block__main-content__scroll-down-arrow">
-      <p>Scroll down to get to know me</p>
-      <div class="meet-up-block__main-content__scroll-down-arrow__arrow"></div>
-    </div>
-  </div>
-</div>
+<portfolio-meet-up-block></portfolio-meet-up-block>
 
 <div class="parallax"></div>
 
@@ -33,8 +22,8 @@
         </div>
       </div>
       <div class="short-about-me-block__name-and-email-contact">
-        <p>&#x2192; My name is: Yurii Husak</p>
-        <p>&#x2192; I'm a frontend developer</p>
+        <p class="short-about-me-block__name-and-email-contact__linked-in-link">&#x2192; My name is: <a class="from-left-bottom-border-animation" [href]="LINKED_IN_LINK" target="_blank">Yurii Husak</a></p>
+        <p>&#x2192; I'm a frontend developer with more than 5 years of experience</p>
         <p>&#x2192; If you have any questions or proposals - feel free to click on the button below</p>
         <portfolio-fancy-button>✉ here</portfolio-fancy-button>
       </div>
@@ -49,3 +38,4 @@
 </div>
 
 <div class="parallax"></div>
+

@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 
-import { FancyButtonComponent } from './components'
+import { FancyButtonComponent, MeetUpBlockComponent } from './components'
 
 const COMPONENTS = [
-  FancyButtonComponent
+  FancyButtonComponent,
+  MeetUpBlockComponent
 ]
-
 
 @NgModule({
   declarations: [

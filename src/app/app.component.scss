@@ -47,18 +47,19 @@
       font-size: 16px;
       &__arrow {
         margin: 0 auto;
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
         background-image: url('../assets/backgrounds/down-arrow-svgrepo-com.svg');
         background-size: contain;
         transform: translate3d(0px, 10.4025px, 0px);
+        animation: upanddown 3s ease-in-out infinite;
       }
     }
   }
 }
 
 .short-about-me-block {
-  height: 950px;
+  height: 100vh;
   background-color: #1c0c5b;
   font-size: 36px;
   width: 100vw;
@@ -168,5 +169,23 @@
   }
   100% {
     transform: translate(0px, 0px);
+  }
+}
+
+@keyframes upanddown {
+  0% {
+    transform: translate(0px);
+  }
+  40% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  60% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translate(0px);
   }
 }

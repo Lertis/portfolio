@@ -1,0 +1,17 @@
+<div class="select-box">
+  <div class="select-box__current" tabindex="1">
+    <ng-container *ngFor="let lang of languages; let i = index">
+      <div class="select-box__value">
+        <input class="select-box__input" type="radio" [id]="i" [value]="i" [checked]="lang.checked" name="Lang" (click)="changeLang(lang.id)"/>
+        <p class="select-box__input-text">{{ lang.languageName | translate }}</p>
+      </div>
+    </ng-container>
+    <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon"
+      aria-hidden="true" />
+  </div>
+  <ul class="select-box__list">
+    <ng-container *ngFor="let lang of languages; let i = index">
+      <li><label class="select-box__option" [for]="i" aria-hidden="aria-hidden">{{ lang.languageName | translate }}</label></li>
+    </ng-container>
+  </ul>
+</div>

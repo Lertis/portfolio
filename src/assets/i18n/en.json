@@ -3,5 +3,10 @@
     "hey": "hey",
     "hello-guest-nice-no-meet-you": "Hello dear guest! Nice to meet you!"
   },
-  "scroll-down-to-get-me-know": "Scroll down to get to know me"
+  "scroll-down-to-get-me-know": "Scroll down to get to know me",
+  "languages": {
+    "en": "English",
+    "de": "Deutschland",
+    "ua": "Ukraine"
+  }
 }

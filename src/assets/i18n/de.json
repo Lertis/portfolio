@@ -3,5 +3,10 @@
     "hey": "hoi",
     "hello-guest-nice-no-meet-you": "Hallo lieve gast! Aangenaam kennis te maken!"
   },
-  "scroll-down-to-get-me-know": "Scroll naar beneden om mij te leren kennen"
+  "scroll-down-to-get-me-know": "Scroll naar beneden om mij te leren kennen",
+  "languages": {
+    "en": "English",
+    "de": "Deutschland",
+    "ua": "Ukraine"
+  }
 }

@@ -3,5 +3,10 @@
     "hey": "Привіт",
     "hello-guest-nice-no-meet-you": "Вітаю, любий гість! Радий знайомству!"
   },
-  "scroll-down-to-get-me-know": "Проскроль вниз, щоб познайомитись зі мною"
+  "scroll-down-to-get-me-know": "Проскроль вниз, щоб познайомитись зі мною",
+  "languages": {
+    "en": "English",
+    "de": "Deutschland",
+    "ua": "Ukraine"
+  }
 }

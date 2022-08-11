@@ -3,25 +3,25 @@ import { BrowserModule } from '@angular/platform-browser'
 import { HttpClientModule, HttpClient } from '@angular/common/http'
 
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core'
-import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 
-import { FancyButtonComponent, MeetUpBlockComponent } from './components'
+import { FancyButtonComponent, MeetUpBlockComponent, PortfolioLanguageSwitcherComponent } from './components'
 
 import { LanguageTranslationsFacadeService } from './services'
 
-import { initLangugages } from './utils'
+import { HttpLoaderFactory, initLangugages } from './utils'
+
+import { DEFAULT_LANGUAGE_TOKEN } from './tokens'
+
+import { Language } from './model'
 
 const COMPONENTS = [
   FancyButtonComponent,
-  MeetUpBlockComponent
+  MeetUpBlockComponent,
+  PortfolioLanguageSwitcherComponent
 ]
-
-export function HttpLoaderFactory (http: HttpClient) {
-  return new TranslateHttpLoader(http)
-}
 
 @NgModule({
   declarations: [
@@ -47,6 +47,10 @@ export function HttpLoaderFactory (http: HttpClient) {
       useFactory: initLangugages,
       deps: [LanguageTranslationsFacadeService, TranslateService],
       multi: true
+    },
+    {
+      provide: DEFAULT_LANGUAGE_TOKEN,
+      useValue: Language.ENGLISH
     }
   ],
   bootstrap: [AppComponent]

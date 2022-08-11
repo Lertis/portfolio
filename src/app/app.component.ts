@@ -1,10 +1,77 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core'
+
+import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
 @Component({
-  selector: 'app-root',
+  selector: 'portfolio-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'portfolio';
+export class AppComponent implements OnInit, AfterViewInit {
+
+  ngOnInit (): void {
+    this.registerGsapPlugins()
+  }
+
+  ngAfterViewInit (): void {
+    this.createStrolling()
+  }
+
+  private readonly createStrolling = () => {
+    gsap.utils.toArray(".revealUp").forEach(function (elem: any) {
+      ScrollTrigger.create({
+        trigger: elem,
+        start: "top 80%",
+        end: "bottom 20%",
+        onEnter: function () {
+          gsap.fromTo(
+            elem,
+            { y: 100, autoAlpha: 0 },
+            {
+              duration: 1.25,
+              y: 0,
+              autoAlpha: 1,
+              ease: "back",
+              overwrite: "auto"
+            }
+          )
+        },
+        onLeave: function () {
+          gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" })
+        },
+        onEnterBack: function () {
+          gsap.fromTo(
+            elem,
+            { y: -100, autoAlpha: 0 },
+            {
+              duration: 1.25,
+              y: 0,
+              autoAlpha: 1,
+              ease: "back",
+              overwrite: "auto"
+            }
+          )
+        },
+        onLeaveBack: function () {
+          gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" })
+        }
+      })
+    })
+    /*     const sections = gsap.utils.toArray(".panel")
+        gsap.to(sections, {
+          xPercent: -100 * (sections.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".container",
+            pin: true,
+            scrub: 1,
+            snap: 1 / (sections.length - 1),
+            end: "+=3500",
+          }
+        }) */
+  }
+
+  private readonly registerGsapPlugins = () => gsap.registerPlugin(ScrollTrigger)
+
 }

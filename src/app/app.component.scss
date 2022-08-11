@@ -1,0 +1,172 @@
+.parallax {
+  background-image: url('../assets/backgrounds/Hexagon.svg');
+  height: 60%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meet-up-block {
+  height: 800px;
+  background-color: #1c0c5b;
+  font-size: 36px;
+  display: grid;
+  place-content: center;
+  &__main-content {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    grid-gap: 2rem;
+    padding: 1rem;
+    &__poping-text {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      &__text-shadows {
+        text-shadow: 3px 3px 0 #1C0C5B, 6px 6px 0 #3D2C8D, 9px 9px #916BBF, 12px 12px 0 #C996CC;
+        font-family: bungee, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: calc(2rem + 5vw);
+        text-align: center;
+        margin: 0;
+        color: #af66b3;
+        animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+        letter-spacing: 0.4rem;
+      }
+    }
+
+    &__greeting {
+      margin: 1rem 0;
+    }
+
+    &__scroll-down-arrow {
+      color: white;
+      text-transform: uppercase;
+      font-size: 16px;
+      &__arrow {
+        margin: 0 auto;
+        width: 20px;
+        height: 20px;
+        background-image: url('../assets/backgrounds/down-arrow-svgrepo-com.svg');
+        background-size: contain;
+        transform: translate3d(0px, 10.4025px, 0px);
+      }
+    }
+  }
+}
+
+.short-about-me-block {
+  height: 950px;
+  background-color: #1c0c5b;
+  font-size: 36px;
+  width: 100vw;
+  display: grid;
+  grid-gap: 10px;
+  padding: 2rem;
+  grid-template-columns: [col1-start] 45% [col2-start] auto [col3-start] auto [col3-end];
+  grid-template-rows: [row1-start] 400px [row2-start] auto [row2-end];
+
+  &__image {
+    grid-column: col1-start;
+    grid-row: row1-start / row2-start;
+    color: white;
+    &__photo {
+      height: 350px;
+    }
+  }
+
+  &__name-and-email-contact {
+    grid-column: col1-start;
+    grid-row: row2-start;
+    color: white;
+  }
+
+  &__description-of-myself {
+    grid-column: col2-start / col3-end;
+    grid-row: row1-start / row2-end;
+    color: white;
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.section {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c0c5b;
+}
+
+.bg2 {
+  background-color: #333;
+}
+
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 #C996CC;
+  }
+  20% {
+    text-shadow: 3px 3px 0 #C996CC, 6px 6px 0 #916BBF;
+  }
+  30% {
+    text-shadow: 3px 3px 0 #C996CC, 6px 6px 0 #916BBF, 9px 9px #3D2C8D;
+  }
+  40% {
+    text-shadow: 3px 3px 0 #C996CC, 6px 6px 0 #916BBF, 9px 9px #3D2C8D, 12px 12px 0 #1C0C5B;
+  }
+  50% {
+    text-shadow: 3px 3px 0 #C996CC, 6px 6px 0 #916BBF, 9px 9px #3D2C8D, 12px 12px 0 #1C0C5B;
+  }
+  60% {
+    text-shadow: 3px 3px 0 #C996CC, 6px 6px 0 #916BBF, 9px 9px #3D2C8D, 12px 12px 0 #1C0C5B;
+  }
+  70% {
+    text-shadow: 3px 3px 0 #C996CC, 6px 6px 0 #916BBF, 9px 9px #3D2C8D;
+  }
+  80% {
+    text-shadow: 3px 3px 0 #C996CC, 6px 6px 0 #916BBF;
+  }
+  90% {
+    text-shadow: 3px 3px 0 #C996CC;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

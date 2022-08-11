@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+@mixin defaut-button-set-up() {
+  border: none;
+  border-radius: 3px;
+  background-color: #c996cc;
+  cursor: pointer;
+  color: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  color: $default-text-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: $default-text-color;
+  margin: 0;
+}
+
+.large-button {
+  @include defaut-button-set-up();
+  padding: 0 2rem;
+  height: 72px;
+  font-size: large;
+}
+
+.default-button {
+  @include defaut-button-set-up();
+  padding: 0 1rem;
+  height: 36px;
+  font-size:medium;
+}

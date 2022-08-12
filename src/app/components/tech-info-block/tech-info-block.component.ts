@@ -9,53 +9,53 @@ export class TechInfoBlockComponent {
   readonly techBlocks = [
     {
       class: 'main',
-      title: 'Main stack',
-      content: 'SPA/PWA Angular 2-14, NX monorepo approach'
+      title: 'tech-block.main-stack.title',
+      content: 'tech-block.main-stack.description'
     },
     {
       class: 'styling',
-      title: 'Styling',
-      content: 'CSS3/SCSS/PostCSS in combination with UI libs: Material UI, PrimeNg, Kendo, EaNG, Ngx-bootstrap'
+      title: 'tech-block.styling.title',
+      content: 'tech-block.styling.description'
     },
     {
-      class: 'sceleton',
-      title: 'Sceleton',
-      content: 'HTML5/PUG'
+      class: 'skeleton',
+      title: 'tech-block.skeleton.title',
+      content: 'tech-block.skeleton.description'
     },
     {
       class: 'functionality',
-      title: 'Functionality',
-      content: 'TS (3+), JS (ES6+)'
+      title: 'tech-block.functionality.title',
+      content: 'tech-block.functionality.description'
     },
     {
       class: 'patterns',
-      title: 'Patterns',
-      content: 'Project architecture may be based on or elegantly cooperate with the next patterns: OOP, reactive programming based on RxJS operators, functional programming'
+      title: 'tech-block.patterns.title',
+      content: 'tech-block.patterns.description'
     },
     {
       class: 'uikit',
-      title: 'Uikit',
-      content: 'Update your docs and UiKit with Storybok + JsDoc + Compodoc'
+      title: 'tech-block.uikit.title',
+      content: 'tech-block.uikit.description'
     },
     {
       class: 'tests',
-      title: 'Tests',
-      content: 'Advanced unit testing using Jest framework. Intergation and e2e testing using Jasmine and Cypress'
+      title: 'tech-block.tests.title',
+      content: 'tech-block.tests.description'
     },
     {
       class: 'state-management',
-      title: 'State management',
-      content: 'Wrap your events architecture based on the Redux pattern and used the most popular implementation of it - NGRX'
+      title: 'tech-block.state-management.title',
+      content: 'tech-block.state-management.description'
     },
     {
       class: 'libs',
-      title: 'Libs & frameworks',
-      content: 'Libs: ag-Grid, Husky, Fullcalendar, Highcharts, Moment.js/Date-fns, Lodash, Quill. Frameworks: ReactJs, NestJs and Ionic3+ usage on basic/intermediate level'
+      title: 'tech-block.libs.title',
+      content: 'tech-block.libs.description'
     },
     {
       class: 'communication',
-      title: 'Communication & Work',
-      content: 'Jira + Confluence, Skype, Slack, Discord, Microsoft Teams. Agile: Kanban & Scrum methodologies, ADRs, road maps, pair programming'
+      title: 'tech-block.communication-work.title',
+      content: 'tech-block.communication-work.description'
     }
   ]
 }

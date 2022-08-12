@@ -27,5 +27,47 @@
     "my-name-is": "Me llamo",
     "i-frontend-developer": "Soy desarrollador frontend con más de 5 años de experiencia",
     "have-questions-or-proposals": "Si tiene alguna pregunta o propuesta, no dude en hacer clic en el botón de abajo"
+  },
+  "tech-block": {
+    "main-stack": {
+      "title": "Pila principal",
+      "description": "Angular 2-14 SPA/PWA proyecto. Escalable y bien organizado, podría hacerse con el enfoque monorepo de NX"
+    },
+    "styling": {
+      "title": "Estilismo",
+      "description": "CSS3/SCSS/PostCSS en combinación con las bibliotecas de interfaz de usuario: Material UI, PrimeNg, Kendo, EaNG, Ngx-bootstrap"
+    },
+    "skeleton": {
+      "title": "Esqueleto",
+      "description": "HTML5/PUG"
+    },
+    "functionality": {
+      "title": "Funcionalidad",
+      "description": "TS (3+), JS (ES6+)"
+    },
+    "patterns": {
+      "title": "Patterns",
+      "description": "La arquitectura del proyecto puede basarse o cooperar elegantemente con los siguientes patrones: programación orientada a objetos, programación reactiva basada en operadores RxJS, programación funcional"
+    },
+    "uikit": {
+      "title": "Uikit",
+      "description": "Actualice sus documentos y UiKit con Storybook + JsDoc + Compodoc"
+    },
+    "tests": {
+      "title": "Pruebas",
+      "description": "Pruebas unitarias avanzadas usando el framework Jest. Pruebas de integración y e2e usando Jasmine y Cypress"
+    },
+    "state-management": {
+      "title": "Administración del estado",
+      "description": "Envuelva su arquitectura de eventos basada en el patrón Redux y use la implementación más popular: NGRX"
+    },
+    "libs": {
+      "title": "Libs",
+      "description": "ag-Grid, Husky, Fullcalendar, Highcharts, Moment.js/Date-fns, Lodash, Quill. Frameworks: ReactJs, NestJs and Ionic3+ uso en nivel básico/intermedio"
+    },
+    "communication-work": {
+      "title": "Comunicación & Trabajar",
+      "description": "Jira + Confluence, Skype, Slack, Discord, Microsoft Teams. Agile: Kanban & Scrum metodologías, ADRs, mapas de carreteras, programación en pareja"
+    }
   }
 }

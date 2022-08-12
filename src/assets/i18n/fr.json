@@ -27,5 +27,47 @@
     "my-name-is": "Mon nom est",
     "i-frontend-developer": "Je suis un développeur frontend avec plus de 5 ans d'expérience",
     "have-questions-or-proposals": "Si vous avez des questions ou des propositions - n'hésitez pas à cliquer sur le bouton ci-dessous"
+  },
+  "tech-block": {
+    "main-stack": {
+      "title": "Pile principale",
+      "description": "Angular 2-14 SPA/PWA projet. Évolutif et bien organisé, pourrait être fait avec l'approche NX monorepo"
+    },
+    "styling": {
+      "title": "Coiffant",
+      "description": "CSS3/SCSS/PostCSS en combinaison avec les bibliothèques d'interface utilisateur: Material UI, PrimeNg, Kendo, EaNG, Ngx-bootstrap"
+    },
+    "skeleton": {
+      "title": "Squelette",
+      "description": "HTML5/PUG"
+    },
+    "functionality": {
+      "title": "Fonctionnalité",
+      "description": "TS (3+), JS (ES6+)"
+    },
+    "patterns": {
+      "title": "Patterns",
+      "description": "L'architecture du projet peut être basée sur ou coopérer élégamment avec les modèles suivants : OOP, programmation réactive basée sur les opérateurs RxJS, programmation fonctionnelle"
+    },
+    "uikit": {
+      "title": "Uikit",
+      "description": "Mettez à jour vos docs et UiKit avec Storybook + JsDoc + Compodoc"
+    },
+    "tests": {
+      "title": "Essais",
+      "description": "Tests unitaires avancés à l'aide du framework Jest. Intégration et test e2e avec Jasmine et Cypress"
+    },
+    "state-management": {
+      "title": "Gestion de l'état",
+      "description": "Enveloppez votre architecture d'événements basée sur le modèle Redux et utilisez l'implémentation la plus populaire de celui-ci - NGRX"
+    },
+    "libs": {
+      "title": "Libs",
+      "description": "ag-Grid, Husky, Fullcalendar, Highcharts, Moment.js/Date-fns, Lodash, Quill. Frameworks: ReactJs, NestJs and Ionic3+ utilisation au niveau basique/intermédiaire"
+    },
+    "communication-work": {
+      "title": "Communication & Travail",
+      "description": "Jira + Confluence, Skype, Slack, Discord, Microsoft Teams. Agile: Kanban & Scrum méthodologies, ADRs, feuilles de route, programmation en binôme"
+    }
   }
 }

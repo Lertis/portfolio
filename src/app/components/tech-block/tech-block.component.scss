@@ -21,16 +21,14 @@
   }
 }
 
-@media only screen and (max-device-width: $big-screen-width) {
-  .block { }
-}
-
 @media only screen and (max-device-width: $medium-screen-width) {
-  .block { }
+  .block {
+    grid-template-rows: minmax(35px, 0);
+  }
 }
 
 @media only screen and (max-device-width: $small-screen-width) {
   .block {
     grid-template-rows: minmax(35px, 0);
-   }
+  }
 }

@@ -27,5 +27,47 @@
     "my-name-is": "Моє ім'я",
     "i-frontend-developer": "Я фронтенд-розробник із досвідом понад 5 років",
     "have-questions-or-proposals": "Якщо у вас є запитання чи пропозиції - сміливо натискайте на кнопку нижче"
+  },
+  "tech-block": {
+    "main-stack": {
+      "title": "Головний стек",
+      "description": "Angular 2-14 SPA/PWA проект. Масштабований та добре організований код, можна зробити за допомогою підходу NX monorepo"
+    },
+    "styling": {
+      "title": "Стилізація",
+      "description": "CSS3/SCSS/PostCSS в комбінації з UI бібліотеками: Material UI, PrimeNg, Kendo, EaNG, Ngx-bootstrap"
+    },
+    "skeleton": {
+      "title": "Скелет",
+      "description": "HTML5/PUG"
+    },
+    "functionality": {
+      "title": "Функіональність",
+      "description": "TS (3+), JS (ES6+)"
+    },
+    "patterns": {
+      "title": "Патерни",
+      "description": "Архітектура проекту може базуватися на наступних шаблонах або елегантно взаємодіяти з ними: ООП, реактивне програмування на основі операторів RxJS, функціональне програмування"
+    },
+    "uikit": {
+      "title": "Uikit",
+      "description": "Оновлення документації та UiKit за допомогою Storybook + JsDoc + Compodoc"
+    },
+    "tests": {
+      "title": "Тестування",
+      "description": "Просунуте unit тестування за допомогою фреймворку Jest. Інтеграційне та e2e тестування за допомогою Jasmine та Cypress"
+    },
+    "state-management": {
+      "title": "State management",
+      "description": "Оберніть свою архітектуру подій на основі шаблону Redux і використовуйте найпопулярнішу його реалізацію - NGRX"
+    },
+    "libs": {
+      "title": "Бібліотеки та фреймворки",
+      "description": "ag-Grid, Husky, Fullcalendar, Highcharts, Moment.js/Date-fns, Lodash, Quill. Frameworks: ReactJs, NestJs and Ionic3+ використання на базовому/середньому рівні"
+    },
+    "communication-work": {
+      "title": "Комунікація & Робота",
+      "description": "Jira + Confluence, Skype, Slack, Discord, Microsoft Teams. Agile: Kanban & Scrum методології, ADRs, road maps, парне програмування"
+    }
   }
 }

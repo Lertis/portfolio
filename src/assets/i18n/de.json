@@ -27,5 +27,47 @@
     "my-name-is": "Mijn naam is",
     "i-frontend-developer": "Ik ben een frontend ontwikkelaar met meer dan 5 jaar ervaring",
     "have-questions-or-proposals": "Als je vragen of voorstellen hebt, klik dan gerust op de onderstaande knop"
+  },
+  "tech-block": {
+    "main-stack": {
+      "title": "Hauptstapel",
+      "description": "Angular 2-14 SPA/PWA projekt. Skalierbar und gut organisiert, könnte mit dem NX-Monorepo-Ansatz durchgeführt werden"
+    },
+    "styling": {
+      "title": "Styling",
+      "description": "CSS3/SCSS/PostCSS in kombination mit UI-bibliotheken: Material UI, PrimeNg, Kendo, EaNG, Ngx-bootstrap"
+    },
+    "skeleton": {
+      "title": "Skelett",
+      "description": "HTML5/PUG"
+    },
+    "functionality": {
+      "title": "Funktionalität",
+      "description": "TS (3+), JS (ES6+)"
+    },
+    "patterns": {
+      "title": "Patterns",
+      "description": "Die projektarchitektur kann auf den folgenden mustern basieren oder elegant mit ihnen zusammenarbeiten: OOP, reaktive programmierung basierend auf RxJS-operatoren, funktionale programmierung"
+    },
+    "uikit": {
+      "title": "Uikit",
+      "description": "Aktualisieren Sie Ihre Dokumente und UiKit mit Storybook + JsDoc + Compodoc"
+    },
+    "tests": {
+      "title": "Tests",
+      "description": "Erweiterte einheitentests mit dem Jest-Framework. Integration und e2e-Tests mit Jasmine und Cypress"
+    },
+    "state-management": {
+      "title": "Staatliche Verwaltung",
+      "description": "Verpacken sie ihre ereignisarchitektur basierend auf dem redux-muster und verwenden sie die beliebteste Implementierung davon – NGRX"
+    },
+    "libs": {
+      "title": "Libs",
+      "description": "ag-Grid, Husky, Fullcalendar, Highcharts, Moment.js/Date-fns, Lodash, Quill. Frameworks: ReactJs, NestJs und Ionic3+ nutzung auf grund-/mittelstufe"
+    },
+    "communication-work": {
+      "title": "Communication & Work",
+      "description": "Jira + Confluence, Skype, Slack, Discord, Microsoft Teams. Agile: Kanban & Scrum methoden, ADRs, straßenkarten, paar-programmierung"
+    }
   }
 }

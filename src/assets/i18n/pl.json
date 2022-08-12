@@ -27,5 +27,47 @@
     "my-name-is": "Nazywam się",
     "i-frontend-developer": "Jestem frontend developerem z ponad 5 letnim doświadczeniem",
     "have-questions-or-proposals": "Jeśli masz jakieś pytania lub propozycje - kliknij przycisk poniżej"
+  },
+  "tech-block": {
+    "main-stack": {
+      "title": "Główny stóg",
+      "description": "Angular 2-14 SPA/PWA projekt. Skalowalny i dobrze zorganizowany, można to zrobić dzięki podejściu NX monorepo"
+    },
+    "styling": {
+      "title": "Stylizacja",
+      "description": "CSS3/SCSS/PostCSS w połączeniu z bibliotekami UI: Material UI, PrimeNg, Kendo, EaNG, Ngx-bootstrap"
+    },
+    "skeleton": {
+      "title": "Szkielet",
+      "description": "HTML5/PUG"
+    },
+    "functionality": {
+      "title": "Funkcjonalność",
+      "description": "TS (3+), JS (ES6+)"
+    },
+    "patterns": {
+      "title": "Patterns",
+      "description": "Architektura projektu może opierać się lub elegancko współpracować z kolejnymi wzorcami: OOP, programowanie reaktywne w oparciu o operatory RxJS, programowanie funkcjonalne"
+    },
+    "uikit": {
+      "title": "Uikit",
+      "description": "Zaktualizuj swoje dokumenty i UiKit za pomocą Storybok + JsDoc + Compodoc"
+    },
+    "tests": {
+      "title": "Testy",
+      "description": "Zaawansowane testy jednostkowe z wykorzystaniem frameworka Jest. Testy integracyjne i e2e przy użyciu Jasmine i Cypress"
+    },
+    "state-management": {
+      "title": "Zarządzanie państwowe",
+      "description": "Opakuj architekturę wydarzeń w oparciu o wzorzec Redux i wykorzystaj najpopularniejszą jego implementację - NGRX"
+    },
+    "libs": {
+      "title": "Libs",
+      "description": "ag-Grid, Husky, Fullcalendar, Highcharts, Moment.js/Date-fns, Lodash, Quill. Frameworks: ReactJs, NestJs and Ionic3+ wykorzystanie na poziomie podstawowym/średniozaawansowanym"
+    },
+    "communication-work": {
+      "title": "Komunikacja & Praca",
+      "description": "Jira + Confluence, Skype, Slack, Discord, Microsoft Teams. Agile: Kanban & Scrum metodologie, ADRs, road maps, programowanie par"
+    }
   }
 }

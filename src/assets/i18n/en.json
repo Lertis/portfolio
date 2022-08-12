@@ -27,5 +27,47 @@
     "my-name-is": "My name is",
     "i-frontend-developer": "I'm a frontend developer with more than 5 years of experience",
     "have-questions-or-proposals": "If you have any questions or proposals - feel free to click on the button below"
+  },
+  "tech-block": {
+    "main-stack": {
+      "title": "Main stack",
+      "description": "Angular 2-14 SPA/PWA project. Scalable and well organized, could be done with NX monorepo approach"
+    },
+    "styling": {
+      "title": "Styling",
+      "description": "CSS3/SCSS/PostCSS in combination with UI libs: Material UI, PrimeNg, Kendo, EaNG, Ngx-bootstrap"
+    },
+    "skeleton": {
+      "title": "Skeleton",
+      "description": "HTML5/PUG"
+    },
+    "functionality": {
+      "title": "Functionality",
+      "description": "TS (3+), JS (ES6+)"
+    },
+    "patterns": {
+      "title": "Patterns",
+      "description": "Project architecture may be based on or elegantly cooperate with the next patterns: OOP, reactive programming based on RxJS operators, functional programming"
+    },
+    "uikit": {
+      "title": "Uikit",
+      "description": "Update your docs and UiKit with Storybook + JsDoc + Compodoc"
+    },
+    "tests": {
+      "title": "Tests",
+      "description": "Advanced unit testing using Jest framework. Integкation and e2e testing using Jasmine and Cypress"
+    },
+    "state-management": {
+      "title": "State management",
+      "description": "Wrap your events architecture based on the Redux pattern and used the most popular implementation of it - NGRX"
+    },
+    "libs": {
+      "title": "Libs",
+      "description": "ag-Grid, Husky, Fullcalendar, Highcharts, Moment.js/Date-fns, Lodash, Quill. Frameworks: ReactJs, NestJs and Ionic3+ usage on basic/intermediate level"
+    },
+    "communication-work": {
+      "title": "Communication & Work",
+      "description": "Jira + Confluence, Skype, Slack, Discord, Microsoft Teams. Agile: Kanban & Scrum methodologies, ADRs, road maps, pair programming"
+    }
   }
 }

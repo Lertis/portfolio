@@ -1,4 +1,4 @@
-import { APP_INITIALIZER, NgModule } from '@angular/core'
+import { APP_INITIALIZER, Injector, NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { HttpClientModule, HttpClient } from '@angular/common/http'
 
@@ -9,11 +9,13 @@ import { AppComponent } from './app.component'
 
 import { FancyButtonComponent, MeetUpBlockComponent, PortfolioLanguageSwitcherComponent } from './components'
 
-import { LanguageTranslationsFacadeService } from './services'
+import { LanguageTranslationsFacadeService, LocalStorageService } from './services'
 
 import { HttpLoaderFactory, initLangugages } from './utils'
 
-import { DEFAULT_LANGUAGE_TOKEN } from './tokens'
+import { DEFAULT_LANGUAGE_TOKEN, LANGUAGE_STORAGE_KEY } from './tokens'
+
+import { LANGUAGE_STORAGE_KEY_VALUE } from './constants'
 
 import { Language } from './model'
 
@@ -42,15 +44,20 @@ const COMPONENTS = [
   ],
   providers: [
     LanguageTranslationsFacadeService,
+    LocalStorageService,
     {
       provide: APP_INITIALIZER,
       useFactory: initLangugages,
-      deps: [LanguageTranslationsFacadeService, TranslateService],
+      deps: [LanguageTranslationsFacadeService, LocalStorageService, Injector, TranslateService],
       multi: true
     },
     {
       provide: DEFAULT_LANGUAGE_TOKEN,
       useValue: Language.ENGLISH
+    },
+    {
+      provide: LANGUAGE_STORAGE_KEY,
+      useValue: LANGUAGE_STORAGE_KEY_VALUE
     }
   ],
   bootstrap: [AppComponent]

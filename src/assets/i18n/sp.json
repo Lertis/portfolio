@@ -11,5 +11,21 @@
     "pl": "Polski",
     "fr": "Français",
     "sp": "Español"
+  },
+  "my-name": "Yurii Husak",
+  "mail-me": "escribeme",
+  "about-my-self": {
+    "title": "Sobre mí",
+    "aim-details": "El objetivo de conocer los detalles",
+    "pedantic": "Pedante, autoorganizado y responsable de las tareas que se me asignan",
+    "desire": "El deseo de crear aquello de lo que me gustaría estar orgulloso",
+    "respect": "Respetar el trabajo que ha hecho un compañero",
+    "easily-communicate": "Puede encontrar fácilmente una manera de comunicarse con otras personas",
+    "resolve-problem": "Trate de ofrecer algunas proposiciones sobre cómo resolver un problema",
+    "cold-critical": "Pensamiento 'frío' y crítico",
+    "like-learn": "Me gusta aprender nuevos enfoques, tecnologías y métodos de resolución de problemas",
+    "my-name-is": "Me llamo",
+    "i-frontend-developer": "Soy desarrollador frontend con más de 5 años de experiencia",
+    "have-questions-or-proposals": "Si tiene alguna pregunta o propuesta, no dude en hacer clic en el botón de abajo"
   }
 }

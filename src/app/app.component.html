@@ -11,23 +11,23 @@
         <img class="short-about-me-block__image__photo" alt="my-photo" src='../assets/backgrounds/my-photo-rounded.png'>
       </div>
       <div class="short-about-me-block__description-of-myself">
-        <p><strong>About my self</strong></p>
+        <p><strong>{{ 'about-my-self.title' | translate }}</strong></p>
         <div style="text-align: left;">
-          <p>&#x2713; Aim in knowing the details</p>
-          <p>&#x2713; Pedantic and responsible for tasks assigned to me</p>
-          <p>&#x2713; The desire to create what I would like to be proud of</p>
-          <p>&#x2713; Respect the job that has been done by a mate</p>
-          <p>&#x2713; Can easily find a way to communicate with other people</p>
-          <p>&#x2713; Try to offer a few propositions on how to resolve a problem</p>
-          <p>&#x2713; 'Cold' and critical think</p>
-          <p>&#x2713; Like to learn new approaches, technologies, and methods of problem resolving</p>
+          <p>&#x2713; {{ 'about-my-self.aim-details' | translate }}</p>
+          <p>&#x2713; {{ 'about-my-self.pedantic' | translate }}</p>
+          <p>&#x2713; {{ 'about-my-self.desire' | translate }}</p>
+          <p>&#x2713; {{ 'about-my-self.respect' | translate }}</p>
+          <p>&#x2713; {{ 'about-my-self.easily-communicate' | translate }}</p>
+          <p>&#x2713; {{ 'about-my-self.resolve-problem' | translate }}</p>
+          <p>&#x2713; {{ 'about-my-self.cold-critical' | translate }}</p>
+          <p>&#x2713; {{ 'about-my-self.like-learn' | translate }}</p>
         </div>
       </div>
       <div class="short-about-me-block__name-and-email-contact">
-        <p class="short-about-me-block__name-and-email-contact__linked-in-link">&#x2192; My name is: <a class="from-left-bottom-border-animation" [href]="LINKED_IN_LINK" target="_blank">Yurii Husak</a></p>
-        <p>&#x2192; I'm a frontend developer with more than 5 years of experience</p>
-        <p>&#x2192; If you have any questions or proposals - feel free to click on the button below</p>
-        <portfolio-fancy-button>✉ here</portfolio-fancy-button>
+        <p class="short-about-me-block__name-and-email-contact__linked-in-link">&#x2192; {{ 'about-my-self.my-name-is' | translate }}: <a class="from-left-bottom-border-animation" [href]="LINKED_IN_LINK" target="_blank">{{ 'my-name' | translate }}</a></p>
+        <p>&#x2192; {{ 'about-my-self.i-frontend-developer' | translate }}</p>
+        <p>&#x2192; {{ 'about-my-self.have-questions-or-proposals' | translate }}</p>
+        <portfolio-fancy-button>✉ {{ 'mail-me' | translate }}</portfolio-fancy-button>
       </div>
     </div>
   </div>

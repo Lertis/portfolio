@@ -11,5 +11,21 @@
     "pl": "Polski",
     "fr": "Français",
     "sp": "Español"
+  },
+  "my-name": "Yurii Husak",
+  "mail-me": "stuur me een bericht",
+  "about-my-self": {
+    "title": "Over mezelf",
+    "aim-details": "Het doel bij het kennen van de details",
+    "pedantic": "Pedant, zelforganiserend en verantwoordelijk voor taken die aan mij zijn toegewezen",
+    "desire": "De wens om te creëren waar ik trots op zou willen zijn",
+    "respect": "Respecteer het werk dat gedaan is door een maat",
+    "easily-communicate": "Kan gemakkelijk een manier vinden om met andere mensen te communiceren",
+    "resolve-problem": "Probeer een paar voorstellen te doen om een probleem op te lossen",
+    "cold-critical": "'Koud' en kritisch denken",
+    "like-learn": "Leer graag nieuwe benaderingen, technologieën en methoden voor het oplossen van problemen",
+    "my-name-is": "Mijn naam is",
+    "i-frontend-developer": "Ik ben een frontend ontwikkelaar met meer dan 5 jaar ervaring",
+    "have-questions-or-proposals": "Als je vragen of voorstellen hebt, klik dan gerust op de onderstaande knop"
   }
 }

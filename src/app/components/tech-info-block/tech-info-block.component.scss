@@ -1,29 +1,6 @@
 @import '../../../assets/styles/variables.scss';
 
-.tech-info-block-section {
-  padding: 1.5rem 2rem;
-  width: 100vw;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  background: $first-color;
-}
-
-.tech-info-blocks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  grid-auto-flow: row;
-  grid-template-areas:
-    'main main main'
-    'styling sceleton functionality'
-    'patterns patterns patterns'
-    'uikit uikit uikit'
-    'tests tests tests'
-    'state-management state-management state-management'
-    'libs libs libs'
-    'communication communication communication';
-
+@mixin grid-item-places() {
   .main {
     grid-area: main;
   }
@@ -65,28 +42,28 @@
   }
 }
 
-@media only screen and (max-device-width: $big-screen-width) {
-  .tech-info-block-section {
-    height: 200vh;
-  }
-
+@mixin grid-default() {
   .tech-info-blocks {
-    font-size: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    grid-auto-flow: row;
+    color: $default-text-color;
+    grid-template-areas:
+      'main main main'
+      'styling sceleton functionality'
+      'patterns patterns patterns'
+      'uikit uikit uikit'
+      'tests tests tests'
+      'state-management state-management state-management'
+      'libs libs libs'
+      'communication communication communication';
+
+    @include grid-item-places();
   }
 }
 
-@media only screen and (max-device-width: $medium-screen-width) {
-  .tech-info-block-section {
-    height: 220vh;
-  }
-}
-
-@media only screen and (max-device-width: $small-screen-width) {
-  .tech-info-block-section {
-    height: 200vh;
-  }
-
-
+@mixin grid-inline() {
   .tech-info-blocks {
     font-size: 13px;
     display: grid;
@@ -105,44 +82,43 @@
       'libs'
       'communication';
 
-    .main {
-      grid-area: main;
-    }
-
-    .styling {
-      grid-area: styling;
-    }
-
-    .sceleton {
-      grid-area: sceleton;
-    }
-
-    .functionality {
-      grid-area: functionality;
-    }
-
-    .patterns {
-      grid-area: patterns;
-    }
-
-    .uikit {
-      grid-area: uikit;
-    }
-
-    .tests {
-      grid-area: tests;
-    }
-
-    .state-management {
-      grid-area: state-management;
-    }
-
-    .libs {
-      grid-area: libs;
-    }
-
-    .communication {
-      grid-area: communication;
-    }
+    @include grid-item-places();
   }
+}
+
+.tech-info-block-section {
+  padding: 1.5rem 2rem;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background: $first-color;
+}
+
+@include grid-default();
+
+@media only screen and (max-device-width: $big-screen-width) {
+  .tech-info-block-section {
+    height: fit-content;
+  }
+
+  .tech-info-blocks {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-device-width: $medium-screen-width) {
+  .tech-info-block-section {
+    height: fit-content;
+  }
+
+  @include grid-inline();
+}
+
+@media only screen and (max-device-width: $small-screen-width) {
+  .tech-info-block-section {
+    height: fit-content;
+  }
+
+  @include grid-inline();
 }

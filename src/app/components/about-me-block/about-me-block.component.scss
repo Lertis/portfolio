@@ -1,7 +1,7 @@
 @import '../../../assets/styles/variables.scss';
 
 .short-about-me-block {
-  background-color: #1c0c5b;
+  background-color: $first-color;
   font-size: 36px;
   width: 100vw;
   display: grid;
@@ -66,7 +66,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1c0c5b;
+  background: $first-color;
+  padding: 1rem 2rem;
 }
 
 
@@ -80,13 +81,13 @@
 @media only screen and (max-device-width: $medium-screen-width) {
   .about-me-section {
     align-items: baseline;
-    height: 75%;
+    height: fit-content
   }
 
   .short-about-me-block {
     font-size: 16px;
     grid-template-columns: [col1-start] 50% [col2-start] 50% [col2-end];
-    grid-template-rows: [row1-start] 40% [row2-start] 50% [row2-end];
+    grid-template-rows: [row1-start] 55% [row2-start] 50% [row2-end];
 
     &__image {
       grid-column: col1-start;
@@ -117,7 +118,7 @@
 @media only screen and (max-device-width: $small-screen-width) {
   .about-me-section {
     align-items: baseline;
-    height: 100%;
+    height: fit-content
   }
 
   .short-about-me-block {

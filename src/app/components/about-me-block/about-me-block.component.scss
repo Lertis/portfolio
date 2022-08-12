@@ -1,0 +1,150 @@
+@import '../../../assets/styles/variables.scss';
+
+.short-about-me-block {
+  background-color: #1c0c5b;
+  font-size: 36px;
+  width: 100vw;
+  display: grid;
+  grid-gap: 10px;
+  padding: 2rem;
+  grid-template-columns: [col1-start] 45% [col2-start] auto [col3-start] auto [col3-end];
+  grid-template-rows: [row1-start] 400px [row2-start] auto [row2-end];
+
+  &__image {
+    grid-column: col1-start;
+    grid-row: row1-start / row2-start;
+    color: $default-text-color;
+    &__photo {
+      height: 350px;
+    }
+  }
+
+  &__name-and-email-contact {
+    grid-column: col1-start;
+    grid-row: row2-start;
+    color: $default-text-color;
+    &__linked-in-link {
+      a {
+        display: inline-block;
+        margin: 0;
+        color: $default-text-color;
+        cursor: pointer;
+      }
+
+      a:after {
+        display: block;
+        content: '';
+        border-bottom: solid 1.5px #c996cc;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+      }
+
+      a.from-left-bottom-border-animation:after {
+        transform-origin: 100% 50%;
+      }
+
+      a.from-left-bottom-border-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: 0% 50%;
+      }
+    }
+  }
+
+  &__description-of-myself {
+    grid-column: col2-start / col3-end;
+    grid-row: row1-start / row2-end;
+    color: $default-text-color;
+  }
+}
+
+.about-me-section {
+  width: 100vw;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c0c5b;
+}
+
+
+@media only screen and (max-device-width: $big-screen-width) {
+  .short-about-me-block {
+    height: 95vh;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-device-width: $medium-screen-width) {
+  .about-me-section {
+    align-items: baseline;
+    height: 75%;
+  }
+
+  .short-about-me-block {
+    font-size: 16px;
+    grid-template-columns: [col1-start] 50% [col2-start] 50% [col2-end];
+    grid-template-rows: [row1-start] 40% [row2-start] 50% [row2-end];
+
+    &__image {
+      grid-column: col1-start;
+      grid-row: row1-start;
+      &__photo {
+        height: 300px;
+      }
+    }
+
+    &__name-and-email-contact {
+      grid-column: col2-start;
+      grid-row: row1-start;
+    }
+
+    &__description-of-myself {
+      grid-column: col1-start/col2-end;
+      grid-row: row2-start/row2-end;
+    }
+
+    &__image {
+      &__photo {
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: $small-screen-width) {
+  .about-me-section {
+    align-items: baseline;
+    height: 100%;
+  }
+
+  .short-about-me-block {
+    grid-template-columns: auto;
+    grid-template-rows: [row1-start] 275px [row2-start] auto [row3-start] auto [row3-end];
+    place-items: center;
+
+    &__image {
+      grid-row: row1-start;
+    }
+
+    &__name-and-email-contact {
+      grid-row: row2-start;
+    }
+
+    &__description-of-myself {
+      grid-row: row3-start;
+    }
+  }
+
+  .short-about-me-block {
+    font-size: 13px;
+    &__image {
+      &__photo {
+        height: 255px;
+      }
+    }
+  }
+
+}

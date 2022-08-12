@@ -7,15 +7,22 @@ import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-transla
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 
-import { FancyButtonComponent, MeetUpBlockComponent, PortfolioLanguageSwitcherComponent, TechBlockComponent, TechInfoBlockComponent } from './components'
+import {
+  FancyButtonComponent,
+  MeetUpBlockComponent,
+  PortfolioLanguageSwitcherComponent,
+  TechBlockComponent,
+  TechInfoBlockComponent,
+  AboutMeBlockComponent
+} from './components'
 
 import { LanguageTranslationsFacadeService, LocalStorageService } from './services'
 
 import { HttpLoaderFactory, initLangugages } from './utils'
 
-import { DEFAULT_LANGUAGE_TOKEN, LANGUAGE_STORAGE_KEY } from './tokens'
+import { DEFAULT_LANGUAGE_TOKEN, LANGUAGE_STORAGE_KEY, LINKED_IN_LINK } from './tokens'
 
-import { LANGUAGE_STORAGE_KEY_VALUE } from './constants'
+import { LANGUAGE_STORAGE_KEY_VALUE, LINKED_IN_LINK_VALUE } from './constants'
 
 import { Language } from './model'
 
@@ -24,7 +31,8 @@ const COMPONENTS = [
   MeetUpBlockComponent,
   PortfolioLanguageSwitcherComponent,
   TechBlockComponent,
-  TechInfoBlockComponent
+  TechInfoBlockComponent,
+  AboutMeBlockComponent
 ]
 
 @NgModule({
@@ -60,6 +68,10 @@ const COMPONENTS = [
     {
       provide: LANGUAGE_STORAGE_KEY,
       useValue: LANGUAGE_STORAGE_KEY_VALUE
+    },
+    {
+      provide: LINKED_IN_LINK,
+      useValue: LINKED_IN_LINK_VALUE
     }
   ],
   bootstrap: [AppComponent]

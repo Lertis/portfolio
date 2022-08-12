@@ -5,6 +5,7 @@
   font-size: 36px;
   width: 100vw;
   display: grid;
+  height: auto;
   grid-gap: 10px;
   padding: 2rem;
   grid-template-columns: [col1-start] 45% [col2-start] auto [col3-start] auto [col3-end];
@@ -141,6 +142,7 @@
 
   .short-about-me-block {
     font-size: 13px;
+    height: auto;
     &__image {
       &__photo {
         height: 255px;

@@ -4,7 +4,7 @@
 
 <div class="parallax"></div>
 
-<div class="section">
+<div class="about-me-section">
   <div class="revealUp">
     <div class="short-about-me-block">
       <div class="short-about-me-block__image">
@@ -24,7 +24,9 @@
         </div>
       </div>
       <div class="short-about-me-block__name-and-email-contact">
-        <p class="short-about-me-block__name-and-email-contact__linked-in-link">&#x2192; {{ 'about-my-self.my-name-is' | translate }}: <a class="from-left-bottom-border-animation" [href]="LINKED_IN_LINK" target="_blank">{{ 'my-name' | translate }}</a></p>
+        <p class="short-about-me-block__name-and-email-contact__linked-in-link">&#x2192; {{ 'about-my-self.my-name-is' |
+          translate }}: <a class="from-left-bottom-border-animation" [href]="LINKED_IN_LINK" target="_blank">{{
+            'my-name' | translate }}</a></p>
         <p>&#x2192; {{ 'about-my-self.i-frontend-developer' | translate }}</p>
         <p>&#x2192; {{ 'about-my-self.have-questions-or-proposals' | translate }}</p>
         <portfolio-fancy-button>✉ {{ 'mail-me' | translate }}</portfolio-fancy-button>
@@ -35,9 +37,6 @@
 
 <div class="parallax"></div>
 
-<div class="section bg2">
-  <h1 class="revealUp">Animation 2</h1>
-</div>
+<portfolio-tech-info-block></portfolio-tech-info-block>
 
 <div class="parallax"></div>
-

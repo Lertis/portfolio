@@ -1,0 +1,11 @@
+<div class="tech-info-block-section">
+  <h1 class="revealUp">
+    <div class="tech-info-blocks">
+      <ng-container *ngFor="let tech of techBlocks">
+        <div [ngClass]="tech.class">
+          <portfolio-tech-block [title]="tech.title" [content]="tech.content"></portfolio-tech-block>
+        </div>
+      </ng-container>
+    </div>
+  </h1>
+</div>

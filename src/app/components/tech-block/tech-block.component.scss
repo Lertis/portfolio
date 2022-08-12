@@ -1,0 +1,22 @@
+@import '../../../assets/styles/variables.scss';
+
+.block {
+  height: 100%;
+  display: grid;
+  grid-template-rows: minmax(80px, 0);
+  border: 1px dashed;
+  border-radius: 5px;
+  padding: 1rem;
+  &__header-title {
+    justify-self: flex-start;
+    h2 {
+      border-bottom: 1px solid $fourth-color;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  &__content {
+    justify-self: flex-start;
+    text-align: left;
+  }
+}

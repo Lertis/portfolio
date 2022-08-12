@@ -1,16 +1,11 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core'
-
-import { gsap } from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'portfolio-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'portfolio-tech-info-block',
+  templateUrl: './tech-info-block.component.html',
+  styleUrls: ['./tech-info-block.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit {
-  readonly LINKED_IN_LINK = 'https://www.linkedin.com/in/yura-husak/'
-
+export class TechInfoBlockComponent {
   readonly techBlocks = [
     {
       class: 'main',
@@ -63,57 +58,4 @@ export class AppComponent implements OnInit, AfterViewInit {
       content: 'Jira + Confluence, Skype, Slack, Discord, Microsoft Teams. Agile: Kanban & Scrum methodologies, ADRs, road maps, pair programming'
     }
   ]
-
-  ngOnInit (): void {
-    this.registerGsapPlugins()
-  }
-
-  ngAfterViewInit (): void {
-    this.createStrolling()
-  }
-
-  private readonly createStrolling = () => {
-    gsap.utils.toArray(".revealUp").forEach(function (elem: any) {
-      ScrollTrigger.create({
-        trigger: elem,
-        start: "top 80%",
-        end: "bottom 20%",
-        onEnter: function () {
-          gsap.fromTo(
-            elem,
-            { y: 100, autoAlpha: 0 },
-            {
-              duration: 1.25,
-              y: 0,
-              autoAlpha: 1,
-              ease: "back",
-              overwrite: "auto"
-            }
-          )
-        },
-        onLeave: function () {
-          gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" })
-        },
-        onEnterBack: function () {
-          gsap.fromTo(
-            elem,
-            { y: -100, autoAlpha: 0 },
-            {
-              duration: 1.25,
-              y: 0,
-              autoAlpha: 1,
-              ease: "back",
-              overwrite: "auto"
-            }
-          )
-        },
-        onLeaveBack: function () {
-          gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" })
-        }
-      })
-    })
-  }
-
-  private readonly registerGsapPlugins = () => gsap.registerPlugin(ScrollTrigger)
-
 }

@@ -66,7 +66,7 @@
   }
 }
 
-.section {
+.about-me-section {
   width: 100vw;
   position: relative;
   padding: 0;
@@ -76,10 +76,6 @@
   justify-content: center;
   align-items: center;
   background: #1c0c5b;
-}
-
-.bg2 {
-  background-color: #333;
 }
 
 .revealUp {
@@ -103,7 +99,7 @@
     height: 50%;
   }
 
-  .section {
+  .about-me-section {
     align-items: baseline;
     height: 75%;
   }
@@ -144,7 +140,7 @@
     height: 40%;
   }
 
-  .section {
+  .about-me-section {
     align-items: baseline;
     height: 100%;
   }
@@ -175,4 +171,64 @@
       }
     }
   }
+
+  .tech-info-blocks {
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      'main'
+      'styling'
+      'sceleton'
+      'functionality'
+      'patterns'
+      'uikit'
+      'tests'
+      'state-management'
+      'libs'
+      'communication';
+
+    .main {
+      grid-area: main;
+    }
+
+    .styling {
+      grid-area: styling;
+    }
+
+    .sceleton {
+      grid-area: sceleton;
+    }
+
+    .functionality {
+      grid-area: functionality;
+    }
+
+    .patterns {
+      grid-area: patterns;
+    }
+
+    .uikit {
+      grid-area: uikit;
+    }
+
+    .tests {
+      grid-area: tests;
+    }
+
+    .state-management {
+      grid-area: state-management;
+    }
+
+    .libs {
+      grid-area: libs;
+    }
+
+    .communication {
+      grid-area: communication;
+    }
+  }
+
 }

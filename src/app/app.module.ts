@@ -7,7 +7,7 @@ import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-transla
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 
-import { FancyButtonComponent, MeetUpBlockComponent, PortfolioLanguageSwitcherComponent } from './components'
+import { FancyButtonComponent, MeetUpBlockComponent, PortfolioLanguageSwitcherComponent, TechBlockComponent, TechInfoBlockComponent } from './components'
 
 import { LanguageTranslationsFacadeService, LocalStorageService } from './services'
 
@@ -22,7 +22,9 @@ import { Language } from './model'
 const COMPONENTS = [
   FancyButtonComponent,
   MeetUpBlockComponent,
-  PortfolioLanguageSwitcherComponent
+  PortfolioLanguageSwitcherComponent,
+  TechBlockComponent,
+  TechInfoBlockComponent
 ]
 
 @NgModule({

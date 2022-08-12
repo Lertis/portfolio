@@ -1,0 +1,15 @@
+{
+  "greeting": {
+    "hey": "hé",
+    "hello-guest-nice-no-meet-you": "Bonjour cher invité! Ravi de vous rencontrer!"
+  },
+  "scroll-down-to-get-me-know": "Faites défiler vers le bas pour apprendre à me connaître",
+  "languages": {
+    "en": "English",
+    "de": "Duitsland",
+    "ua": "Українська",
+    "pl": "Polski",
+    "fr": "Français",
+    "sp": "Español"
+  }
+}

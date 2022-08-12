@@ -1,11 +1,11 @@
 @import '../../../assets/styles/variables.scss';
 
 .select-box {
+  z-index: 10;
   position: fixed;
   top: 1rem;
   right: 1rem;
   display: block;
-  width: 15%;
   margin: 0 auto;
   font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
   font-size: 18px;
@@ -32,7 +32,7 @@
     }
   }
 
-  &__icon {
+  /*   &__icon {
     position: absolute;
     top: 50%;
     right: 15px;
@@ -40,7 +40,7 @@
     width: 20px;
     opacity: 0.3;
     transition: 0.2s ease;
-  }
+  } */
 
   &__value {
     display: flex;
@@ -50,15 +50,15 @@
     display: none;
 
     &:checked + .select-box__input-text {
-      display: block;
+      display: flex;
+      align-items: center;
     }
   }
 
   &__input-text {
     display: none;
-    width: 100%;
     margin: 0;
-    padding: 15px;
+    padding: 15px 25px;
     background-color: #af66b3;
     border-radius: 10px;
   }
@@ -86,6 +86,8 @@
     * > label {
       background: $third-color;
       color: $default-text-color;
+      display: flex;
+      justify-content: center;
     }
 
     * > label:hover {

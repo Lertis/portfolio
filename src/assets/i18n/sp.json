@@ -1,9 +1,9 @@
 {
   "greeting": {
-    "hey": "hoi",
-    "hello-guest-nice-no-meet-you": "Hallo lieve gast! Aangenaam kennis te maken!"
+    "hey": "oye",
+    "hello-guest-nice-no-meet-you": "Hola querida/o invitada! Gusto en conocerlo!"
   },
-  "scroll-down-to-get-me-know": "Scroll naar beneden om mij te leren kennen",
+  "scroll-down-to-get-me-know": "Desplázate hacia abajo para conocerme",
   "languages": {
     "en": "English",
     "de": "Duitsland",
